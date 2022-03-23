@@ -5,8 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">Dictionary</header>
       <a href="#" className="btn btn-primary">
-        {" "}
-        Hello{" "}
+        Hello
       </a>
     </div>
   );
