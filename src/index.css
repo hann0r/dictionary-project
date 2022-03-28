@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/298/original/blank-open-bookedit.jpg?1648490628");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 code {

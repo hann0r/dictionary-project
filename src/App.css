@@ -1,9 +1,18 @@
 .App-header {
   font-size: 50px;
   font-style: italic;
+  margin-left: 200px;
+  margin-bottom: 15px;
 }
 
 .App {
-  margin: 40px;
-  text-align: center;
+  margin: 100px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.App-title {
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 10px;
 }
