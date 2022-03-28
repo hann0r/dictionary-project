@@ -2,9 +2,16 @@
   margin-top: 10px;
   color: #70757a;
   font-style: italic;
+  margin-left: 100px;
 }
 .Meaning .definition {
   margin-top: 20px;
   font-size: 15px;
   line-height: 20px;
+  margin-left: 100px;
+}
+
+.Meaning h3 {
+  margin-left: 100px;
+  text-transform: capitalize;
 }
