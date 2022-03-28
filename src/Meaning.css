@@ -2,16 +2,20 @@
   margin-top: 10px;
   color: #70757a;
   font-style: italic;
-  margin-left: 100px;
+  margin-left: 80px;
+  text-transform: capitalize;
 }
 .Meaning .definition {
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 .Meaning h3 {
-  margin-left: 100px;
+  margin-left: 80px;
   text-transform: capitalize;
+  font-style: bold;
+  font-size: 24px;
+  text-decoration: underline;
 }

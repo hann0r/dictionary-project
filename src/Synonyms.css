@@ -1,7 +1,8 @@
 .Synonyms {
   margin: 20px 0 0;
   padding: 0;
-  margin-left: 150px;
+  margin-left: 70px;
+  text-transform: capitalize;
 }
 
 .Synonyms li {
