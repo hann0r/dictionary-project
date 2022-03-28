@@ -1,7 +1,9 @@
 .Dictionary {
   max-width: 600px;
   font-size: 14px;
+  line-height: 20px;
 }
 .Search {
   margin-left: 240px;
+  margin-top: 30px;
 }

@@ -1,0 +1,10 @@
+.Meaning .example {
+  margin-top: 10px;
+  color: #70757a;
+  font-style: italic;
+}
+.Meaning .definition {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
