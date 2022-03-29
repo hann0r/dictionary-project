@@ -1,13 +1,11 @@
 .Photos img {
   border-radius: 15px;
-  float: left;
   margin-left: 835px;
   margin-bottom: 30px;
-}
-.Pictures {
   position: fixed;
-  float: left;
   top: 126px;
-  right: 910px;
+  right: 90px;
   left: 0px;
+  max-width: 200px;
+  column-count: 3;
 }
