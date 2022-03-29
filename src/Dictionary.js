@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
@@ -27,7 +29,9 @@ export default function Dictionary() {
       <form onSubmit={search} className="Search">
         <input type="search" onChange={handleKeywordChange} />
 
-        <span className="Hourglass">🔎</span>
+        <span className="Hourglass">
+          <FontAwesomeIcon icon={faSearch} />
+        </span>
       </form>
       <strong className="Suggest">Suggested words:</strong> Earth, Moon,
       Peace...
