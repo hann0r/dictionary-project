@@ -1,4 +1,3 @@
-import React from "react";
 import Meaning from "./Meaning.js";
 import Phonetic from "./Phonetic.js";
 import "./Results.css";
