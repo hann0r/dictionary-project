@@ -25,4 +25,10 @@
 .Suggest {
   margin-left: 200px;
   line-height: 50px;
+  font-size: 15px;
+}
+
+footer {
+  margin-left: 1000px;
+  text-align: center;
 }
