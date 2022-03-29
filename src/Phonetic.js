@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import "./Phonetic.css";
 
 export default function Phonetic(props) {
@@ -14,7 +14,7 @@ export default function Phonetic(props) {
     return (
       <div className="Phonetic">
         <button type="button" className="Phonetic-button" onClick={handleClick}>
-          <FontAwesomeIcon icon={faPlay} />
+          <FontAwesomeIcon icon={faVolumeUp} />
         </button>
         <span className="Phonetic text">{props.phonetic.text}</span>
       </div>

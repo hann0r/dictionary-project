@@ -29,7 +29,8 @@ export default function Dictionary() {
 
         <span className="Hourglass">🔎</span>
       </form>
-      <strong className="Suggest">Suggested words:</strong> Earth, Dog, Peace...
+      <strong className="Suggest">Suggested words:</strong> Earth, Moon,
+      Peace...
       <Results results={results} />
     </div>
   );
