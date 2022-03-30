@@ -20,12 +20,6 @@ export default function Dictionary(props) {
     setPhotos(respose.data.photos);
   }
 
-  function search(keyword) {
-    // documentation: https://api.dictionaryapi.dev
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
-  }
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
