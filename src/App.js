@@ -8,7 +8,8 @@ function App() {
       <header className="App-header">
         <span className="App-title">Dictionary</span>
       </header>
-      <Dictionary />
+
+      <Dictionary defaultKeyword="galaxy" />
       <footer>
         Coded by <strong>Hannah Harries</strong> <br />
         <br />

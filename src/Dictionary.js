@@ -6,10 +6,11 @@ import "./Dictionary.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+export default function Dictionary(props) {
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [photos, setPhotos] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     console.log(response.data[0]);
@@ -19,13 +20,21 @@ export default function Dictionary() {
     setPhotos(respose.data.photos);
   }
 
-  function search(event) {
-    event.preventDefault();
-
+  function search(keyword) {
     // documentation: https://api.dictionaryapi.dev
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+  }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function search() {
+    // documentation: https://api.dictionaryapi.dev
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
     let pexelsApiKey =
       "563492ad6f91700001000001b94689f5adae4815a33c5fd52078e191";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`;
@@ -36,21 +45,30 @@ export default function Dictionary() {
     setKeyword(event.target.value);
   }
 
-  return (
-    <div className="Dictionary">
-      <form onSubmit={search} className="Search">
-        <input type="search" onChange={handleKeywordChange} />
+  function load() {
+    setLoaded(true);
+    search();
+  }
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <form onSubmit={handleSubmit} className="Search">
+          <input type="search" onChange={handleKeywordChange} />
 
-        <span className="Hourglass">
-          <FontAwesomeIcon icon={faSearch} />
-        </span>
-      </form>
-      <strong className="Suggest">Suggested words:</strong> Eyeball, Moon,
-      Galaxy, Waterfall, Peace, Puppies...
-      <Results results={results} />
-      <section>
-        <Photos photos={photos} />
-      </section>
-    </div>
-  );
+          <span className="Hourglass">
+            <FontAwesomeIcon icon={faSearch} />
+          </span>
+        </form>
+        <strong className="Suggest">Suggested words:</strong> Eyeball, Moon,
+        Galaxy, Waterfall, Peace, Puppies...
+        <Results results={results} />
+        <section>
+          <Photos photos={photos} />
+        </section>
+      </div>
+    );
+  } else {
+    load();
+    return "Loading..";
+  }
 }
