@@ -21,10 +21,6 @@ function App() {
         </p>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
         Coded by{" "}
         <strong>
           <u>Hannah Harries</u>
