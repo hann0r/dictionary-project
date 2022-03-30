@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
 import Dictionary from "./Dictionary";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -11,7 +13,23 @@ function App() {
 
       <Dictionary defaultKeyword="galaxy" />
       <footer>
-        Coded by <strong>Hannah Harries</strong> <br />
+        <FontAwesomeIcon icon={faHandPointUp} />
+        <p className="Original">
+          <em>
+            <strong>Click images</strong> for original source{" "}
+          </em>
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        Coded by{" "}
+        <strong>
+          <u>Hannah Harries</u>
+        </strong>
+        <br />
         <br />
         <a
           href="https://github.com/hann0r/dictionary-project"
