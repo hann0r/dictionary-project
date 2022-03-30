@@ -45,8 +45,8 @@ export default function Dictionary() {
           <FontAwesomeIcon icon={faSearch} />
         </span>
       </form>
-      <strong className="Suggest">Suggested words:</strong> Earth, Moon,
-      Peace...
+      <strong className="Suggest">Suggested words:</strong> Eyeball, Moon,
+      Galaxy, Waterfall, Peace, Puppies...
       <Results results={results} />
       <section>
         <Photos photos={photos} />
