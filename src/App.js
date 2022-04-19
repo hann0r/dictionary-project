@@ -29,7 +29,7 @@ function App() {
       </div>
       <br />
       <br />
-      <div class="container sm-fluid">
+      <div class="container-fluid-git">
         <div class="row">
           <div class="col-sm-12">
             <p className="Github">

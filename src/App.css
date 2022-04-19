@@ -28,8 +28,8 @@
   font-size: 20px;
   border: 2px solid;
   border-radius: 30px;
-  padding: 15px;
-  margin-left: 26px;
+  padding: 10px;
+  margin-left: 40px;
   display: inline-block;
   text-align: center;
 }
@@ -37,4 +37,8 @@
   text-align: center;
   margin-left: 26px;
   display: inline-block;
+}
+.container-fluid-git a {
+  color: #bf80ea;
+  font-weight: bold;
 }
