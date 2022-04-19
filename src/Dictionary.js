@@ -31,7 +31,7 @@ export default function Dictionary(props) {
     axios.get(apiUrl).then(handleResponse);
     let pexelsApiKey =
       "563492ad6f91700001000001b94689f5adae4815a33c5fd52078e191";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=5`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
@@ -45,20 +45,38 @@ export default function Dictionary(props) {
   }
   if (loaded) {
     return (
-      <div className="Dictionary">
-        <form onSubmit={handleSubmit} className="Search">
-          <input type="search" onChange={handleKeywordChange} />
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div className="Dictionary">
+              <form onSubmit={handleSubmit} className="Search">
+                <input type="search" onChange={handleKeywordChange} />
 
-          <span className="Hourglass">
-            <FontAwesomeIcon icon={faSearch} />
-          </span>
-        </form>
-        <strong className="Suggest">Suggested words:</strong> Eyeball, Moon,
-        Galaxy, Waterfall, Peace, Puppies...
-        <Results results={results} />
-        <section>
-          <Photos photos={photos} />
-        </section>
+                <span className="Hourglass">
+                  <FontAwesomeIcon icon={faSearch} />
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <p className="Suggest">
+                <strong>Suggested words:</strong>
+                <div className="Suggest-words">
+                  {" "}
+                  <em>Eyeball, Moon, Puppies...</em>
+                </div>
+              </p>
+
+              <Results results={results} />
+              <section>
+                <Photos photos={photos} />
+              </section>
+            </div>
+          </div>
+        </div>
       </div>
     );
   } else {

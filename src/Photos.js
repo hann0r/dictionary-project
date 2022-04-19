@@ -5,21 +5,29 @@ export default function Photos(props) {
   if (props.photos) {
     return (
       <section className="Photos">
-        <div className="row">
-          {props.photos.map(function (photo, index) {
-            return (
-              <div className="col-3" key={index}>
-                <a href={photo.src.original} target="_blank" rel="noreferrer">
-                  <img
-                    src={photo.src.landscape}
-                    alt="images"
-                    className="img-fluid"
-                  />
-                </a>
+        {props.photos.map(function (photo, index) {
+          return (
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-5">
+                  <div className="col-5" key={index}>
+                    <a
+                      href={photo.src.original}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={photo.src.landscape}
+                        alt="images searched"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </section>
     );
   } else {

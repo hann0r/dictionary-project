@@ -2,18 +2,20 @@ body {
   font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/302/original/book-png-25670.png?1648502436"),
-    linear-gradient(
-      101.9deg,
-      rgb(197, 120, 234) 1.6%,
-      rgb(120, 220, 234) 51.2%,
-      rgb(119, 249, 176) 99.8%
-    );
+  background: linear-gradient(
+    101.9deg,
+    rgb(197, 120, 234) 1.6%,
+    rgb(120, 220, 234) 51.2%,
+    rgb(119, 249, 176) 99.8%
+  );
   background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
-  background-size: 1550px;
+  background-size: cover;
   padding: 0;
-  animation: gradient 10s ease infinite;
-  animation: gradient 10s ease infinite;
-  height: fit-content;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -60px;
+  margin-right: 0px;
+  padding: 0;
 }

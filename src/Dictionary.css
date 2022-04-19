@@ -2,10 +2,20 @@
   max-width: 600px;
   font-size: 14px;
   line-height: 20px;
+  display: inline-block;
 }
 .Search {
-  margin-left: 240px;
+  text-align: center;
   margin-top: 30px;
+  display: flex center;
+}
+form {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0px;
+  height: 5em;
+  width: 400px;
 }
 .Dictionary input {
   width: 50%;
@@ -23,9 +33,12 @@
 }
 
 .Suggest {
-  margin-left: 120px;
   line-height: 50px;
   font-size: 15px;
+  text-align: center;
+}
+.Suggest-words {
+  font-size: 16px;
 }
 
 footer {

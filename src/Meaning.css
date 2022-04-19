@@ -1,21 +1,27 @@
-.Meaning .example {
-  margin-top: 10px;
+.example {
   color: #70757a;
   font-style: italic;
-  margin-left: 80px;
+
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Meaning .definition {
-  margin-top: 20px;
+.definition {
+  margin-top: 5px;
   font-size: 16px;
-  line-height: 20px;
-  margin-left: 80px;
+  line-height: 30px;
+  text-align: left;
 }
 
 .Meaning h3 {
-  margin-left: 80px;
   text-transform: capitalize;
   font-style: bold;
   font-size: 24px;
   text-decoration: underline;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+
+  margin-top: 30px;
 }

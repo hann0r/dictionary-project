@@ -1,17 +1,15 @@
 .Photos {
-  margin-left: 750px;
   margin-bottom: 30px;
-  position: fixed;
   top: 146px;
   right: 160px;
   left: 50px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 .Photos img {
-  border-radius: 8px;
-  max-width: 140px;
-  max-height: 200px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  border-radius: 30px;
+  max-width: 300px;
+  margin-top: 23px;
+  margin-left: 26px;
 }

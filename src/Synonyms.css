@@ -1,7 +1,6 @@
 .Synonyms {
-  margin: 20px 0 0;
   padding: 0;
-  margin-left: 70px;
+  margin-top: 20px;
   text-transform: capitalize;
 }
 
@@ -9,7 +8,6 @@
   display: inline-block;
   font-size: 13px;
   line-height: 1;
-  appearance: auto;
   margin: 0px 0px 10px 0px;
   box-sizing: border-box;
   border: 1.3px dashed black;
