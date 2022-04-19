@@ -8,6 +8,7 @@
   text-align: center;
   margin-top: 30px;
   display: flex center;
+  max-width: 400px;
 }
 form {
   -webkit-appearance: none;
@@ -26,22 +27,18 @@ form {
   font-size: 18px;
   font-weight: bold;
 }
-.Hourglass {
-  font-size: 25px;
-  padding: 20 5 6 px;
-  margin: 10px;
+.search-button {
+  max-width: 68px;
+  margin-left: 5px;
 }
 
 .Suggest {
   line-height: 50px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 .Suggest-words {
-  font-size: 16px;
-}
-
-footer {
-  margin-left: 1000px;
-  text-align: center;
+  font-size: 15px;
+  margin-top: -23px;
+  margin-bottom: -15px;
 }

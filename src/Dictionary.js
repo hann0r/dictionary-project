@@ -4,7 +4,10 @@ import Results from "./Results";
 import Photos from "./Photos";
 import "./Dictionary.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowDownShortWide,
+  faBookBookmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -45,23 +48,25 @@ export default function Dictionary(props) {
   }
   if (loaded) {
     return (
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
+      <div className="container-fluid-search">
+        <div className="row">
+          <div cclassName="col-sm-12">
             <div className="Dictionary">
               <form onSubmit={handleSubmit} className="Search">
                 <input type="search" onChange={handleKeywordChange} />
-
-                <span className="Hourglass">
-                  <FontAwesomeIcon icon={faSearch} />
-                </span>
+                <input
+                  type="submit"
+                  value="Search"
+                  className="search-button"
+                ></input>
               </form>
             </div>
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-12">
+
+        <div className="container-fluid">
+          <div className="row">
+            <div classNames="col-sm-12">
               <p className="Suggest">
                 <strong>Suggested words:</strong>
                 <div className="Suggest-words">
@@ -69,7 +74,15 @@ export default function Dictionary(props) {
                   <em>Eyeball, Moon, Puppies...</em>
                 </div>
               </p>
-
+              <span className="Book">
+                <FontAwesomeIcon icon={faBookBookmark} />
+              </span>
+              <span> Definitions below </span>
+              <span className="Book">
+                <FontAwesomeIcon icon={faArrowDownShortWide} />
+              </span>
+              <br />
+              <br />
               <Results results={results} />
               <section>
                 <Photos photos={photos} />
