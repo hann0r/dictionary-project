@@ -1,12 +1,8 @@
 .example {
   color: #70757a;
   font-style: italic;
-  text-align: center;
-  display: inline-block;
+  margin-left: 300px;
   text-transform: capitalize;
-  display: flex;
-  justify-content: center;
-  margin-left: 250px;
   font-size: 15px;
 }
 .definition {
@@ -37,7 +33,7 @@
     margin-left: 150px;
   }
   .example {
-    margin-left: 5px;
+    margin-left: 40px;
     text-align: left;
   }
 }
