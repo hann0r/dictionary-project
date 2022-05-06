@@ -8,7 +8,8 @@
   text-align: center;
   margin-top: 30px;
   display: flex center;
-  max-width: 400px;
+  max-width: 350px;
+  margin-left: 25px;
 }
 form {
   -webkit-appearance: none;
@@ -26,11 +27,10 @@ form {
   text-transform: capitalize;
   font-size: 18px;
   font-weight: bold;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 .search-button {
   max-width: 68px;
-  margin-left: 5px;
 }
 
 .Suggest {
