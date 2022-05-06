@@ -20,9 +20,7 @@ function App() {
         <div className="row">
           <div className="col-sm-12">
             <p className="Original">
-              <em>
-                <strong>Click images for original source</strong>
-              </em>
+              <strong>Click images for original source</strong>
             </p>
           </div>
         </div>
@@ -33,11 +31,7 @@ function App() {
         <div class="row">
           <div class="col-sm-12">
             <p className="Github">
-              Coded by{" "}
-              <strong>
-                <u>Hannah Harries</u>
-              </strong>
-              <br />
+              ♡ Coded with love by <strong>Hannah Harries</strong> ♡<br />
               <br />
               <a
                 href="https://github.com/hann0r/dictionary-project"

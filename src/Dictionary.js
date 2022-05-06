@@ -74,15 +74,18 @@ export default function Dictionary(props) {
                   <em>Eyeball, Moon, Puppies...</em>
                 </div>
               </p>
-              <span className="Book">
-                <FontAwesomeIcon icon={faBookBookmark} />
-              </span>
-              <span> Definitions below </span>
-              <span className="Book">
-                <FontAwesomeIcon icon={faArrowDownShortWide} />
-              </span>
+              <div className="Definitions-below">
+                <span className="Book">
+                  <FontAwesomeIcon icon={faBookBookmark} />
+                </span>
+                <span> Definitions below </span>
+                <span className="Book">
+                  <FontAwesomeIcon icon={faArrowDownShortWide} />
+                </span>
+              </div>
               <br />
               <br />
+
               <Results results={results} />
               <section>
                 <Photos photos={photos} />
